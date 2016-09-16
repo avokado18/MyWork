@@ -1,0 +1,12 @@
+<hibernate-mapping>
+    <class name="model.Client" table="client">
+    <id column="id" name="id" type="int">
+        <generator class="increment"/>
+    </id>
+        <property column="surname" name="surname" type="java.lang.String"/>
+        <property column="name" name="name" type="java.lang.String"/>
+        <property column="patronymic" name="patronymic" type="java.lang.String"/>
+        <property column="birthday" name="birthday" type="java.sql.Date"/>
+        <property column="accNumber" name="accNumber" type="int"/>
+    </class>
+</hibernate-mapping>
